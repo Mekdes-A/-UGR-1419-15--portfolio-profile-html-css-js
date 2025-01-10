@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,31 @@
     <link rel="stylesheet" href="about.html">
     <link rel="stylesheet" href="interest.html">
     <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <h2>MA</h2>
+            <h1>MA</h1>
             <div class="dropdown">
-                <a href="#"><img src="images/icons8-menu-50.png" alt=""></a>
-                <div class="dropdown-content">
+                <button id="menu-toggle">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="50px" width="50px"
+                        viewBox="0 0 24 24" fill="none" stroke="blueviolet" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="dropdown-content" id="dropdown-menu">
                     <ul>
                         <li><a href="home.html">Home</a></li>
                         <li><a href="resume.html">Resume</a></li>
@@ -31,19 +49,33 @@
         </nav>
     </header>
     <main>
-        <h2>Hi there!</h2>
-        <p>I'm Mekdes Assefa, <br>Software Engineering student at AAU</p>
-        <h1>FIND ME ON</h1>
-        <p>Feel free to connect with me</p>
-        <a href="https://github.com/Mekdes-A"><img src="images/icons8-github-30.png" alt="picture 1"></a>
-        <a href="https://www.instagram.com/mekd_assefa/"><img src="images/icons8-instagram-24.png" alt="picture 2"></a>
-        <a href="https://leetcode.com/u/Mekd_A/"><img src="images/icons8-leetcode-32.png" alt="picture 3"></a>
+        <div class="first-container">
+            <h2>Hi there!</h2>
+            <p>I'm <span class="highlight">Mekdes Assefa</span>, <br> a Software Engineering student <br> at AAU.</p>
+        </div>
+        <div class="second-container">
+            <h1>FIND ME ON</h1>
+            <p>Feel free to <span class="highlight">connect</span> with me</p>
+            <a href="https://www.linkedin.com/in/mekdes-assefa-44b94a31b/"><img src="images/image.png"
+                    alt="picture 1"></a>
+            <a href="https://github.com/Mekdes-A"><img src="images/icons8-github-30.png" alt="picture 2"></a>
+            <a href="https://www.instagram.com/mekd_assefa/"><img src="images/icons8-instagram-24.png"
+                    alt="picture 3"></a>
+        </div>
     </main>
-    <footer>
-        <p>Copyright&copy; 2024 Mekdes Assefa</p>  
-        <a href="https://github.com/Mekdes-A"><img src="images/icons8-github-30.png" alt="picture 1"></a>
-        <a href="https://www.instagram.com/mekd_assefa/"><img src="images/icons8-instagram-24.png" alt="picture 2"></a>
-        <a href="https://leetcode.com/u/Mekd_A/"><img src="images/icons8-leetcode-32.png" alt="picture 3"></a>
+    <footer class="footer-container">
+        <div class="copyright">
+            <p>Copyright&copy; 2024, Mekdes Assefa</p>
+        </div>
+        <div class="third-container">
+            <a href="https://www.linkedin.com/in/mekdes-assefa-44b94a31b/"><img src="images/image.png"
+                    alt="picture 1"></a>
+            <a href="https://github.com/Mekdes-A"><img src="images/icons8-github-30.png" alt="picture 2"></a>
+            <a href="https://www.instagram.com/mekd_assefa/"><img src="images/icons8-instagram-24.png"
+                    alt="picture 3"></a>
+        </div>
     </footer>
+    <script src="/script/script.js"></script>
 </body>
+
 </html>

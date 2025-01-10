@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,58 +10,85 @@
     <link rel="stylesheet" href="about.html">
     <link rel="stylesheet" href="interest.html">
     <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/interest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <nav>
             <h1>MA</h1>
-        </nav>
-        <div class="dropdown">
-            <a href="#"><img src="images/icons8-menu-50.png" alt=""></a>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="hobby.html">Hobby</a></li>
-                    <li><a href="interest.html">Interest</a></li>
-                </ul>
+            <div class="dropdown">
+                <button id="menu-toggle">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="50px" width="50px"
+                        viewBox="0 0 24 24" fill="none" stroke="blueviolet" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="dropdown-content" id="dropdown-menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="hobby.html">Hobby</a></li>
+                        <li><a href="interest.html">Interest</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+
+        </nav>
     </header>
     <main>
-        <div>
-            <section>
-                <h5>I have interest in:</h5>
-                <table>
-                    <tr>
-                        <td><img src="images/icons8-machine-learning-100.png" alt="ML"></td>
-                        <td><img src="images/icons8-cloud-computing-100.png" alt="Cloud computing"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/icons8-blockchain-100.png" alt="blockchain Technology"></td>
-                        <td><img src="images/icons8-data-science-64.png" alt="data science"></td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <h6>here is a video that showcases the future with these technologies</h6>
+        <div class="container">
+            
+            <div class="first-container">
+                <div class="top"><h5>I have interest in:</h5></div>
+                <div>
+                    <table class="centered-container">
+                        <tr >
+                            <td><img src="images/icons8-machine-learning-100.png" alt="ML"></td>
+                            <td><img src="images/icons8-cloud-computing-100.png" alt="Cloud computing"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/icons8-blockchain-100.png" alt="blockchain Technology"></td>
+                            <td><img src="images/icons8-data-science-64.png" alt="data science"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <section class="second-container">
+                <h6 class="top">here is a video that showcases the future with these technologies</h6>
                 <div class="video-container">
-                    <video width="500" height="300" src="videos/Future_of_AI_Future_of_Artificial_Intelligence_2024_AI_Technology.mp4" controls>
+                    <video width="400"  height="300"
+                        src="videos/Future_of_AI_Future_of_Artificial_Intelligence_2024_AI_Technology.mp4" controls>
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </section>
-            <figure>
-                <img src="images/artificial-intelligence-machine-learning-ai-data-deep-learning-for-future-technology-artwork-mining-isometric-neural-network-machine-programming-and-responsive-web-banner-illustration-vector.jpg" alt="">
-            </figure>
+            
         </div>
     </main>
-    <footer>
-        <p>Copyright&copy; 2024 Mekdes Assefa</p>  
-        <a href="https://github.com/Mekdes-A"><img src="images/icons8-github-30.png" alt="picture 1"></a>
-        <a href="https://www.instagram.com/mekd_assefa/"><img src="images/icons8-instagram-24.png" alt="picture 2"></a>
-        <a href="https://leetcode.com/u/Mekd_A/"><img src="images/icons8-leetcode-32.png" alt="picture 3"></a>
+    <footer class="footer-container">
+        <div class="copyright">
+            <p>Copyright&copy; 2024 Mekdes Assefa</p>
+        </div>
+        <div class="third-container">
+            <a href="https://www.linkedin.com/in/mekdes-assefa-44b94a31b/"><img src="images/image.png"
+                    alt="picture 1"></a>
+            <a href="https://github.com/Mekdes-A"><img src="images/icons8-github-30.png" alt="picture 2"></a>
+            <a href="https://www.instagram.com/mekd_assefa/"><img src="images/icons8-instagram-24.png"
+                    alt="picture 3"></a>
+        </div>
     </footer>
+    <script src="/script/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,71 @@
+img{
+    background-color: white;
+    width: 80px;
+}
+main h3{
+    margin-left: 50px;
+}
+
+.list{
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+    align-items: center; /* Vertically aligns text and image */
+    justify-content: space-between; /* Distributes space evenly */
+    gap: 10px; /* Space between the text and the image */
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+}
+.centered-container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    .list{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    .first-container{
+        display: flex;
+    }
+    .second-container{
+        display: flex;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .first-container{
+        display: flex;
+        gap: 170px;
+    }
+    .second-container{
+        display: flex;
+        gap: 170px;
+    }
+    main h3{
+        margin-top: 100px;
+    }
+
+}
+/* Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+    main h3{
+        margin-top: 100px;
+    }
+    .list{
+        width: 700px;
+        gap: 150px;
+    }
+
+}

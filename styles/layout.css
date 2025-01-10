@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+img{
+    
+    max-width: 100%;
+    height: auto; 
+}
+
+.highlight {
+    color: blueviolet;
+}
+
+
+.header {
+    background-color: rgb(67, 63, 63);
+    color: white;
+
+    padding: 10;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin-left: 40px;
+    color: blueviolet;
+    font-size: 100px;
+    font-weight: 800;
+
+}
+
+#menu-toggle svg {
+    color: blueviolet;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 40px;
+}
+
+#menu-toggle svg:hover {
+    color: darkblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Show Dropdown when Active */
+.dropdown-content.active {
+    display: block;
+}
+
+
+
+/* Show dropdown links as horizontal navigation for larger screens */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none; /* Hide the hamburger button */
+    }
+    .dropdown{
+        margin-right: 60px;
+    }
+
+    .dropdown-content {
+        display: flex; /* Make links visible */
+        position: static; /* Remove absolute positioning */
+        background: none; /* Remove dropdown background */
+        box-shadow: none; /* Remove shadow */
+        border: none; /* Remove border */
+    }
+
+    .dropdown-content ul {
+        display: flex;
+        justify-content: space-evenly; /* Distributes space evenly */
+        width: 100%; /* Optional: stretches links across the navbar */
+        gap: 60px;
+    }
+
+    .dropdown-content li {
+        padding: 0; /* Remove extra padding */
+    }
+
+    .dropdown-content li a {
+        color: white; /* Adjust link color for better visibility */
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .dropdown-content li a:hover {
+        color: blueviolet; /* Optional hover effect */
+    }
+}
+
+/*footer*/
+.footer-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(35, 33, 33);
+}
+
+footer  img {
+    background-color: white;
+    margin-top: 10px;
+    width: 10px;
+    margin-left: 10px;
+}

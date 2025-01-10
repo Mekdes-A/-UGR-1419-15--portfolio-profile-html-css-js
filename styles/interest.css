@@ -1,0 +1,165 @@
+img{
+    background-color: white;
+    width: 100px;
+
+}
+.centered-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+}
+.video-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+main h5 {
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+main h6 {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    /*laptop portrait*/
+    .second-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    .first-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .centered-container{
+        width: 200px;
+        margin-right: 50px;
+    }
+    .video-container video{
+        width: 200px;
+        margin-left: 50px;
+    
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    /*laptop landscape*/
+    .second-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 100px;
+        gap: 100px;
+    }
+    .first-container{
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 20px; 
+        padding: 10px;
+        margin-bottom: 5px ;
+        gap: 100px;
+    }
+    .centered-container{
+        width: 150px;
+    
+    }
+    .video-container video{
+        width: 150px;
+        margin-top: 50px;
+    
+    
+    }
+    .container{
+        display: flex;
+    }
+
+}
+@media (min-width: 1025px) {
+    /* Desktop (min-width: 1025px) */
+    .second-container {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 20px; 
+        padding: 10px; 
+        margin-bottom: 100px;
+        gap: 100px;
+    }
+    .first-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 5px ;
+        gap: 100px;
+    }
+    .top{
+        margin-bottom: 200px;
+    }
+    .centered-container{
+        width: 250px;
+        margin-top: 200px;
+    
+    }
+    .video-container video{
+        width: 300px;
+        margin-top: 200px;
+    
+    
+    }
+    .container{
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* CSS styles for mobile landscape */
+    .second-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    .first-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .centered-container{
+        width: 200px;
+        margin-right: 50px;
+    }
+    .video-container video{
+        width: 200px;
+        margin-left: 50px;
+    
+    }
+    .container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

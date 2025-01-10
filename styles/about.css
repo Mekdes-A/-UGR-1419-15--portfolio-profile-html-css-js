@@ -1,0 +1,180 @@
+.center {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.about p {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+}
+
+.about2 h3 {
+    margin-left: 30px;
+}
+
+.about2 p {
+    margin-left: 100px;
+}
+
+main img {
+    background-color: white;
+    width: 50px;
+}
+
+.highlight {
+    font-weight: 600;
+
+}
+
+.first-container img {
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+}
+
+.second-container img {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.first-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.second-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.third-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.third-container img {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* Styles for portrait tablets */
+    
+    .container{
+        display: flex;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        
+    }
+    .center{
+        width: 300px;
+    }
+    .third-container{
+        
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .third-container img{
+        margin-right: 80px;
+        margin-bottom: 100px;
+    }
+    
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for landscape tablets */
+    .container{
+        display: block;
+        
+    }
+    .break{
+        margin-left: 50px;
+    }
+    .break p br{
+        display: none;
+    }
+    .about2 {
+        margin-left: 50px;
+    }
+    .mar-lef{
+        margin-left: 90px;
+    }
+    .container-one{
+        display: flex;
+        gap: 10px;
+        width: 700px;
+        margin-left: 80px;
+        
+    }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* CSS styles for mobile landscape */
+    .container{
+        display: block;
+        
+    }
+    .break{
+        margin-left: 50px;
+    }
+    .break p br{
+        display: none;
+    }
+    .about2 {
+        margin-left: 50px;
+    }
+    .mar-lef{
+        margin-left: 90px;
+    }
+    .container-one{
+        display: flex;
+        gap: 10px;
+        width: 700px;
+        margin-left: 80px;
+        
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    /* Styles for small desktops and laptops */
+    .container{
+        display: block;
+        
+    }
+    .break{
+        margin-left: 50px;
+    }
+    .break p br{
+        display: none;
+    }
+    .about2 {
+        margin-left: 50px;
+    }
+    .mar-lef{
+        margin-left: 90px;
+    }
+    .container-one{
+        display: flex;
+        gap: 10px;
+        width: 700px;
+        margin-left: 80px;
+        
+    }
+    .second-container{
+        margin-top: 80px;  
+        margin-left: 2000px;
+        background-color: white;
+    }
+
+}
