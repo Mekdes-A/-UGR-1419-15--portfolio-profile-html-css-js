@@ -20,9 +20,7 @@ img{
 
 
 .header {
-    background-color: rgb(67, 63, 63);
     color: white;
-
     padding: 10;
 }
 
@@ -30,6 +28,10 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(35, 32, 32);
+}
+header nav h1{
+    background-color:rgb(35, 32, 32);
 }
 
 .header h1 {
@@ -62,6 +64,7 @@ nav {
 /* Dropdown Styles */
 .dropdown {
     position: relative;
+    background-color: rgb(35, 32, 32);
 }
 
 #menu-toggle {
@@ -69,6 +72,7 @@ nav {
     border: none;
     cursor: pointer;
     padding: 5px;
+    background-color: rgb(35, 32, 32);
 }
 
 .dropdown-content {
@@ -76,16 +80,17 @@ nav {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     z-index: 1000;
+    background-color: rgb(35, 32, 32);
 }
 
 .dropdown-content ul {
     list-style: none;
     margin: 0;
     padding: 10px 0;
+    background-color: rgb(35, 32, 32);
 }
 
 .dropdown-content li {
@@ -97,12 +102,25 @@ nav {
     text-decoration: none;
     color: #333;
     display: block;
+    background-color: rgb(35, 32, 32);
+}
+.menu-icon{
+    background-color:rgb(35, 32, 32);
 }
 
 /* Show Dropdown when Active */
 .dropdown-content.active {
     display: block;
 }
+
+.dropdown-content.active {
+    display: block; /* Show the dropdown when active */
+    background-color: rgb(50, 50, 50); /* Active background color */
+  }
+  
+  .dropdown-content.active ul li a {
+    color: white; /* Change link color when active */
+  }
 
 
 
@@ -159,4 +177,13 @@ footer  img {
     margin-top: 10px;
     width: 10px;
     margin-left: 10px;
+}
+.copyright p{
+    background-color: rgb(35, 33, 33) ;
+}
+.third-container2 a{
+    background-color: rgb(35, 33, 33) ;
+}
+.third-container2{
+    background-color: rgb(35, 33, 33) ;
 }

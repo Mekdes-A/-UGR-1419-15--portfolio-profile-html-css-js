@@ -120,32 +120,6 @@ main img {
     
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* CSS styles for mobile landscape */
-    .container{
-        display: block;
-        
-    }
-    .break{
-        margin-left: 50px;
-    }
-    .break p br{
-        display: none;
-    }
-    .about2 {
-        margin-left: 50px;
-    }
-    .mar-lef{
-        margin-left: 90px;
-    }
-    .container-one{
-        display: flex;
-        gap: 10px;
-        width: 700px;
-        margin-left: 80px;
-        
-    }
-}
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
     /* Styles for small desktops and laptops */
     .container{
@@ -166,15 +140,13 @@ main img {
     }
     .container-one{
         display: flex;
-        gap: 10px;
+        gap: 30px;
         width: 700px;
-        margin-left: 80px;
+        margin-left: 300px;
         
     }
     .second-container{
-        margin-top: 80px;  
-        margin-left: 2000px;
-        background-color: white;
+        padding-top: 60px;
     }
 
 }
