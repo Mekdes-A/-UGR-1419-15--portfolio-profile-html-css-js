@@ -15,8 +15,10 @@ img{
 }
 
 .highlight {
-    color: blueviolet;
+    color:rgb(190, 139, 238);
 }
+
+
 
 
 .header {
@@ -36,7 +38,7 @@ header nav h1{
 
 .header h1 {
     margin-left: 40px;
-    color: blueviolet;
+    color: rgb(180, 120, 237);
     font-size: 100px;
     font-weight: 800;
 
